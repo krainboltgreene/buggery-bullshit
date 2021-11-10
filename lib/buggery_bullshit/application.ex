@@ -15,7 +15,9 @@ defmodule BuggeryBullshit.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: BuggeryBullshit.PubSub},
       # Start the Endpoint (http/https)
-      BuggeryBullshitWeb.Endpoint
+      BuggeryBullshitWeb.Endpoint,
+      # An HTTP client
+      {Finch, name: SCHTTPClient}
       # Start a worker by calling: BuggeryBullshit.Worker.start_link(arg)
       # {BuggeryBullshit.Worker, arg}
     ]
