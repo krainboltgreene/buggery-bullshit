@@ -7,6 +7,7 @@
 # General application configuration
 import Config
 
+
 config :buggery_bullshit,
   ecto_repos: [BuggeryBullshit.Repo],
   generators: [binary_id: true]

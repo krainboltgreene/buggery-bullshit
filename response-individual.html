@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_Head1">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>
+    South Carolina Public Sex Offender Registry
+  </title>
+  <meta name="description" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+  <style type="text/css">
+    .style1 {
+      padding-top: 1em;
+      padding-left: 1.5em;
+      width: 42px;
+    }
+  </style>
+  <link href="App_Themes/SLED/GridView.css" type="text/css" rel="stylesheet" />
+  <link href="App_Themes/SLED/Layout.css" type="text/css" rel="stylesheet" />
+  <link href="App_Themes/SLED/Site.css" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_0 {
+      background-color: white;
+      visibility: hidden;
+      display: none;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 {
+      color: Black;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_2 {
+      color: Black;
+      font-weight: normal;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3 {
+      border-style: none;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4 {
+      background-color: #607183;
+      padding: 5px 20px 5px 20px;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_5 {}
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_6 {
+      background-color: #B5C7DE;
+      padding: 5px 20px 5px 20px;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_7 {
+      background-color: #B5C7DE;
+      border-color: #607183;
+      border-width: 1px;
+      border-style: Solid;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_8 {
+      color: Black;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_9 {
+      background-color: #A7B1BB;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_10 {
+      color: #B5C7DE;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_11 {
+      background-color: #A7B1BB;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_12 {
+      color: White;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_13 {
+      color: White;
+      background-color: #A7B1BB;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_14 {
+      color: Black;
+    }
+
+    .ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_15 {
+      color: Black;
+      background-color: #A7B1BB;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="aspnetForm" method="post" action="./OffenderDetails.aspx?Display=Main&amp;Id=1102189" id="aspnetForm">
+    <div>
+      <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+      <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="BXCN0e2mYVgfltyroE3jk71VD9kZ752bwvfh/06ynOxphwArlVeZvud6+qMR+3OV32zWdknb6GUUDNT3bn23TcAy+XmLVrI+09jqySSalRRokxS0/Q4OyfY00hqWZNbjrAd8NiMDBQZ+q3dmajW9xCZ1bJreAKUbPiLwyiA1q2LKHxLLuiE4urSnicqDefAS3HyU1qbeiSFibiq7StvWsBz1Y9Vy9osedJ0fUoDa38wJ04u0L3BDxq6c8wgCxViEp5vvIsV3I9/DMUiRR9oWrVzI8/E/vm4t+K8HO5kBKNq3j4Aw+HmpV3nooFhnbG5LWx+hbzb9I7HoIMify1nTgy3iSxSP2/cBug87/apzdWgtBumXJhMnOXc9CpBWoX6u/htPx4BoyzHB4fvtI/K/bpLblnUPZyjtrsJeuE5X4juVuqPS/3PaPKd96x/tUGBxc7/JI99NgYJPRqug0JIggABgeJ40GF/1IAHyFxrwDgvvl7d18r9aElOeaiVmavjWpUnlNpscYnLyt9jGgLe3fHlwOWp+flyqXvz+aW9EY6QHOjL26/rhvuoVBRgJ4vdAaALDDJs/wDcmk0sB3aHmmXhAQIJ3NyG7FdBTwHhtDvFB7qOLSe8s0teDySYneUIWo/DD+PQsllxiJOc3xBi636XboYt8kJvPywDN/6oIfFQpGYqELL4twrhsA3tv2MdJ6R6qe/1bZxSUppjJ44GRcX1uosteKUm0tVDcuJD62iGpFznFHZk8mf7ATOYUPi8nG03VE1DUTR9ViGuzTaIYhOsGSRAc3zFtdJviqEL9oEgpU8nw24Uwfm22XzZxENl6JaJDBjd6wvIMR4uauuVz3Xa/YIVqdZkSs/Ta8qcVFZMX2Doq/BXg7Yvjk/YaathjbdVcHEJeDRCtZ+Wn9F/hphsvTLW5BxLmimHEbsBO0Im75kV2ZpGc+kgM6SROjOBMrkXxaD+eeJTx5ivqSQ3ikg9nzHvqJ507S6TZMiFRXRtzwkf7qIcVXwNXOxVxw8gLRETN1pL0WZNMm/fR2u6d3agmH9peeKlMyUEf7xQ7amcxPBIXUs6GAnG80sZRmP3SX6x4gkixSMSonQwGLJ2g+vazrRCKhLaTRAYqtEEd7CxVmycYjxVoXygTFj6Ne0fFVVr43PjpVaZJLld/DaIja1N8gQq06BOO6aZsnZsQfT08+QIDKFCgC6ERyvo6XUsalOmU2Idh+PDnq+en4h21Rkcqzdc5qeyGFe1h7XBCXYuYVn+VMRrKYq2LR9/OeNLXtPaJYy5WuPeaT2/Dqa8LehFraqktD7hi8zAe8bopeit9JLkgIcJTBX65uERPpwJRg2MrJxwvUBG4QwHLBKEWFMlIaKn0lqu+oS9BIDKrQaRfUDA4RZVjWRGrxfrzCsdbeVC/8i4zlGwYFLvGJ4l80Q05DsQORLeQK+ocZRUw6qf0nG9KABtdr0P3IYbI9IB9avvPPNYnFxfz0dLnHGE8AjPYZrw3TsPK74mbE9kihcqmNmHnVU/xf2N0jhLhDLJ/tntknAYTZ5LR4SZxQpR6JISOXEjJimLxdzryCjDC5zat0B4DZWUO5aFT9n4iI0Gxa6lTexP7gWrsKdxkPbj3Yp2DokvxOeVFTqEyI4bTZlrnv93ExYB/hUzt77fam0/ypHh5+OZpEhpCagb6Hcy5y/zhO0LcNpaqmq/PXQVemd/BIalvuyEP8bXodURO50M3VKaFe9Gs83lEbXQKlbMD2XxRxrFWM02FPBwJPW1s8fPBUGAmRviIremuiT6VIWlPxoGyh1O4NqlQMaFfNif5+nK9jshs4DNjdUgj0qZvNKqXYuBqJcTGcXD7Gd3BiLyn4tgXJC3IlZNfB0Au4BjqbJ/8XBXXBVGmxoDnkuanOfhbB7Fn64EMMPkCt1pz6vcAxk/E+AHNlBX/OKzqqvPRNMkCmYTRM1Tc+fY5upY3H1HuOY5Y4n6Y2KjlghgLj93LSSMQwbpxtzLIIG16p3AWJa1xwk02Xppcx1ByYSMNTfNkuvadsgbxWE0v4eiKsoaBVVGUQ99M/T/UgSdf1Erz5UDqWyoh1XISsmFNczSAFVUKLoP/7zStoUEkV+RYXZK913PaWMO4xo3wkZpNl/HBZKVAqA7CUd8l88gTjdiLAs1Xcci6nyinDUJgnWZRk2j7" />
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var theForm = document.forms['aspnetForm'];
+      if (!theForm) {
+        theForm = document.aspnetForm;
+      }
+      function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+        }
+      }
+//]]>
+    </script>
+
+
+    <script
+      src="/WebResource.axd?d=3Wy4JTqSrDZt3BBKKpIEJ3RcM9OySS6IDJAPttvXe91hFVO2BdQFU50-Sik3tFwiF8o_cO2ReZFXNo7DUTw7e75IjW2nVG8cu7YZ83CCOgc1&amp;t=637453888754849868"
+      type="text/javascript"></script>
+
+
+    <script
+      src="/WebResource.axd?d=mafw4TBcH71pq6QKd5ULqlj3nakyvCTQ8R57Xqr-7aCGLO1l-EVgg9-S96KfF8RXSZD_BYlP6zWPl3YAEdcLJVugE_0GpG5dsrPWSERxMds1&amp;t=637453888754849868"
+      type="text/javascript"></script>
+    <div>
+
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FB87282F" />
+      <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+        value="rql1px2yYnpxaHj+xqyLqcNJANDGK5IqpYlQqbxDN/m1hQiAynu1yQ3j35jovPZT43h6d9mEXIoZSpb50dO2gf35a713u17BKFVHZhUzoYIvnqPhWdufo5oJoy8qYOhSPm7BINKAmuH1LFxd0dPuNopsIdjLHmBico3spN4EoUb6GeexzJF4XkYCQxG3/LM+uuW6dmk+ZJdzF2RMDq/SrA==" />
+    </div>
+
+    <div class="Header">
+
+      <br />
+
+      <div style="text-align:center; cursor:pointer;" onclick="location.href='https://www.sled.sc.gov/'; "
+        title="SLED Home Page">
+
+        <img id="ctl00_SledEmblem" src="App_Themes/SLED/Images/logo2.png" style="border-width:0px;" />
+        <img id="ctl00_SledBanner" src="App_Themes/SLED/Images/nameplate.png" style="border-width:0px;" />
+
+      </div>
+
+    </div>
+
+    <div class="MainArea">
+
+
+      <!--<a accesskey="2" title="Skip Navigation" href="#main_content">
+<img height="1" border="0" width="1" alt="Skip Navigation" src="./App_Themes/SLED/images/spacer.gif"/>
+</a>   -->
+
+      <div>
+        <!--% if (Session["Allow"] != null)
+               { %-->
+
+        <ul id="mymenu" style="clear: left; margin-left: 0px">
+          <li style="width: 18%;"><a href="./GeographicalSearch.aspx">Geographic Search</a></li>
+          <li style="width: 16%;"><a href="./SearchOffender.aspx">Name Search</a> </li>
+          <!--%--<li style="width: 24%;"><a href="./SearchByEmailAndPhone.aspx">E-Mail or Telephone Search</a></li>--%-->
+          <li style="width: 19%;"><a href="./CommunityNotifications.aspx">Community Notifications</a></li>
+          <li style="width: 12%;"><a href="./FAQs.aspx">FAQs</a></li>
+          <li style="width: 15%;"><a href="./Resources.aspx">Resources</a></li>
+          <li style="width: 16%;"><a href="./ContactUs.aspx">Contact Us</a></li>
+        </ul>
+
+        <div class="Menu" style="clear: left;">
+        </div>
+        <!--% } %-->
+      </div>
+
+      <div style="margin: 10px 10px 10px">
+
+        <a id="main_content"></a>
+        <br />
+        <div id="ctl00_ContentPlaceHolder1_divButtons" style="text-align: center;">
+
+
+          <img id="ctl00_ContentPlaceHolder1_imgResults" src="Images/back.png"
+            style="height:30px;width:30px;border-width:0px;" />
+          <a id="ctl00_ContentPlaceHolder1_lnkResults"
+            href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkResults&#39;,&#39;&#39;)">Return to Search
+            Results</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <img id="ctl00_ContentPlaceHolder1_imgForm" src="Images/form.png"
+            style="height:30px;width:30px;border-width:0px;" />
+          <a id="ctl00_ContentPlaceHolder1_lnkSearch"
+            href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkSearch&#39;,&#39;&#39;)">Back to Search
+            Form</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img id="ctl00_ContentPlaceHolder1_imgTip" src="Images/tip.jpg"
+            style="height:30px;width:30px;border-width:0px;" />
+          <a id="ctl00_ContentPlaceHolder1_lnkTips"
+            href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkTips&#39;,&#39;&#39;)">Submit a Tip</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img id="ctl00_ContentPlaceHolder1_imgQuestion" src="Images/faqs.jpg"
+            style="height:30px;width:30px;border-width:0px;" />
+          <a id="ctl00_ContentPlaceHolder1_lnkQuestion"
+            href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkQuestion&#39;,&#39;&#39;)">Ask A
+            Question</a>
+        </div>
+
+
+
+        <style type="text/css">
+          div.Row {
+            clear: right;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            left: 10px;
+            position: relative;
+            text-align: left;
+            border-bottom: solid 1px #E7E7E7;
+          }
+
+          div.RowHead {
+            float: left;
+            width: 105px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #797979;
+            padding-bottom: 5px;
+            text-align: left;
+          }
+
+          div.RowHead2 {
+            float: left;
+            width: 200px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #797979;
+            padding-bottom: 5px;
+            text-align: left;
+          }
+
+          div.header {
+            font-family: Verdana;
+            font-size: 13px;
+            /*text-decoration: underline;*/
+            font-weight: bold;
+            color: #607183;
+            padding-bottom: 2px;
+            margin: 0;
+            border: solid 1px #C4CBD2;
+            padding-left: 3px;
+            background-color: #E9ECEF;
+          }
+
+          div.TableRowHead {
+            vertical-align: top;
+            font-size: 11px;
+            font-weight: bold;
+            color: #797979;
+          }
+        </style>
+
+
+        <script type="text/javascript">
+          function changePic(offenderID, imageID, photoDate) {
+
+            var mainImage = 'ctl00_ContentPlaceHolder1_OffenderDetails1_imgOffender';
+            document.getElementById(mainImage).src = 'DisplayImage.aspx?OffenderId=' + offenderID + '&ImageId=' + imageID + '&Thumb=false';
+            var picDate = 'ctl00_ContentPlaceHolder1_OffenderDetails1_spanPicDate';
+            document.getElementById(picDate).innerHTML = photoDate.toLocaleString();
+          }
+        </script>
+
+        <div style="min-height: 300px;">
+
+
+          <div style="padding-top: 15px; font-size: 20px; color: Black; font-weight: bold;">
+            FOSTER, BERNARD CHARLES
+
+          </div>
+
+
+          <div id="offendermenu">
+            <a href="#ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_SkipLink"><img alt="Skip Navigation Links"
+                src="/WebResource.axd?d=fxjXYG6ZFXtYjC3fKzEzCPKM2a9sdkr_kUPnmLG9iMtqAeLY2GW4R-t1zbsT-S7lxToY06sdG5gXklZaNyi8a1bVPCSgt---a55f_YVddA41&amp;t=637453888754849868"
+                width="0" height="0" style="border-width:0px;" /></a>
+            <table id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser"
+              class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_2" cellpadding="0" cellspacing="0"
+              border="0">
+              <tr>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern0">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=Main&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Main</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width:3px;"></td>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern1">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=OtherAddresses&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Other Addresses</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width:3px;"></td>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern2">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=Scars&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Scars</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width:3px;"></td>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern3">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=Marks&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Marks</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width:3px;"></td>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern4">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=Tattoos&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Tattoos</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width:3px;"></td>
+                <td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)"
+                  id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUsern5">
+                  <table class="offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_4" cellpadding="0"
+                    cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="white-space:nowrap;"><a
+                          class="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_1 offendermenu ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_3"
+                          href="OffenderDetails.aspx?Display=VehicleInformation&amp;ID=1102189"
+                          style="border-style:none;font-size:1em;">Vehicle Information</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table><a id="ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_SkipLink"></a>
+          </div>
+
+
+          <div style="float: left; padding-right: 15px;">
+
+
+
+            <img id="ctl00_ContentPlaceHolder1_OffenderDetails1_imgOffender"
+              src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312197&amp;Thumb=false" style="border-width:0px;" />
+
+
+
+            <div
+              style="clear: right; padding-top: 3px; padding-bottom: 3px; left: 10px; position: relative; text-align: left;">
+              <div
+                style="float: left; font-size: 11px; font-weight: bold; color: #797979; padding-bottom: 5px; text-align: left;">
+                Picture Date:
+              </div>
+              &nbsp;&nbsp;&nbsp; <span id="ctl00_ContentPlaceHolder1_OffenderDetails1_spanPicDate"
+                style="font-size:12px; color: #797979; font-weight:bold;">8/11/2010</span>
+            </div>
+
+
+
+            <div style="clear: left;">
+              <div>
+
+
+                <div style="float: left; padding-right: 1px; padding-bottom: 10px;">
+                  <a id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl0_LinkIdLit"
+                    onclick="changePic(&#39;1102189&#39;,&#39;312199&#39;,&#39;9/23/2009&#39;)"><img
+                      id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl0_ImageIdLit"
+                      src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312199&amp;Thumb=true"
+                      style="height:50px;width:50px;border-width:0px;" /></a>
+                </div>
+
+                <div style="float: left; padding-right: 1px; padding-bottom: 10px;">
+                  <a id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl1_LinkIdLit"
+                    onclick="changePic(&#39;1102189&#39;,&#39;312198&#39;,&#39;7/10/2009&#39;)"><img
+                      id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl1_ImageIdLit"
+                      src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312198&amp;Thumb=true"
+                      style="height:50px;width:50px;border-width:0px;" /></a>
+                </div>
+
+                <div style="float: left; padding-right: 1px; padding-bottom: 10px;">
+                  <a id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl2_LinkIdLit"
+                    onclick="changePic(&#39;1102189&#39;,&#39;312197&#39;,&#39;8/11/2010&#39;)"><img
+                      id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl2_ImageIdLit"
+                      src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312197&amp;Thumb=true"
+                      style="height:50px;width:50px;border-width:0px;" /></a>
+                </div>
+
+                <div style="float: left; padding-right: 1px; padding-bottom: 10px;">
+                  <a id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl3_LinkIdLit"
+                    onclick="changePic(&#39;1102189&#39;,&#39;312196&#39;,&#39;6/30/2010&#39;)"><img
+                      id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl3_ImageIdLit"
+                      src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312196&amp;Thumb=true"
+                      style="height:50px;width:50px;border-width:0px;" /></a>
+                </div>
+
+                <div style="float: left; padding-right: 1px; padding-bottom: 10px;">
+                  <a id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl4_LinkIdLit"
+                    onclick="changePic(&#39;1102189&#39;,&#39;312195&#39;,&#39;10/21/2009&#39;)"><img
+                      id="ctl00_ContentPlaceHolder1_OffenderDetails1_listImages_ctrl4_ImageIdLit"
+                      src="DisplayImage.aspx?OffenderId=1102189&amp;ImageId=312195&amp;Thumb=true"
+                      style="height:50px;width:50px;border-width:0px;" /></a>
+                </div>
+
+
+              </div>
+            </div>
+
+
+            <div
+              style="clear: left; float: left; width: 250px; margin-top:20px; border: 1px solid silver; padding:5px;">
+
+              <div style="padding-bottom:5px;">
+                OFFENDER TYPE:
+              </div>
+
+
+              <div style="padding-top:3px; color:#666666; font-weight:bold; font-size:14px;">
+                ADULT TIER II
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div style="padding-bottom: 20px; padding-right: 10px; float: right; width: 60%;">
+            <div class="header" style="margin-right: -10px;">
+              Name:</div>
+            <div class="Row">
+              <div class="RowHead">
+                First Name:</div>
+              BERNARD&nbsp;
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Middle Name:</div>
+              CHARLES&nbsp;
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Last Name:</div>
+              FOSTER&nbsp;
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Suffix:</div>
+              &nbsp;
+            </div>
+          </div>
+
+
+          <div style="padding-bottom: 20px; padding-right: 10px; float: right; width: 60%;">
+            <div class="header" style="margin-right: -10px;">
+              Aliases:</div>
+
+            <div style="clear: right; padding-left: 10px; padding-top: 3px; padding-bottom: 3px;
+                    left: 10px; position: relative; text-align: left; border-bottom: solid 1px #E7E7E7;">
+              FOSTER, BARNARD CHARLES
+
+            </div>
+
+            <div style="clear: right; padding-left: 10px; padding-top: 3px; padding-bottom: 3px;
+                    left: 10px; position: relative; text-align: left; border-bottom: solid 1px #E7E7E7;">
+              FOSTER, BENARD CHARLES
+
+            </div>
+
+            <div style="clear: right; padding-left: 10px; padding-top: 3px; padding-bottom: 3px;
+                    left: 10px; position: relative; text-align: left; border-bottom: solid 1px #E7E7E7;">
+              FOSTER, BERNARD
+
+            </div>
+
+            <div style="clear: right; padding-left: 10px; padding-top: 3px; padding-bottom: 3px;
+                    left: 10px; position: relative; text-align: left; border-bottom: solid 1px #E7E7E7;">
+              SMOOTH, BERNARD
+
+            </div>
+
+            <div style="clear: right; padding-left: 10px; padding-top: 3px; padding-bottom: 3px;
+                    left: 10px; position: relative; text-align: left; border-bottom: solid 1px #E7E7E7;">
+              FOSTER, SMOTH
+
+            </div>
+
+          </div>
+
+
+          <div style="padding-bottom: 20px; padding-right: 10px; float: right; width: 60%;">
+            <div class="header" style="margin-right: -10px;">
+              Gender/Race/DOB:</div>
+            <div class="Row">
+              <div class="RowHead">
+                Gender:</div>
+              Male
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Race:</div>
+              Black
+            </div>
+
+
+
+            <div class="Row">
+              <div class="RowHead">
+                Date of Birth:</div>
+              9/7/1971
+            </div>
+          </div>
+
+
+          <div style="padding-bottom: 20px; padding-right: 10px; float: right; width: 60%;">
+            <div class="header" style="margin-right: -10px;">
+              Primary Address:</div>
+
+
+            <div class="Row">
+              1204 E CHURCH ST
+
+            </div>
+            <div class="Row">
+
+              BISHOPVILLE, SC 29010
+
+
+
+            </div>
+
+
+            <div class="Row">
+              <div class="RowHead">
+                County:
+              </div>
+
+              LEE
+            </div>
+
+
+
+          </div>
+
+
+          <div style="padding-right: 10px; float: right; width: 60%;">
+            <div class="header" style="margin-right: -10px;">
+              Physical Description:</div>
+            <div class="Row">
+              <div class="RowHead">
+                Height:</div>
+              6 FT 1 IN
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Weight:</div>
+              195 LBS
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Hair Color:</div>
+              Bald
+            </div>
+            <div class="Row">
+              <div class="RowHead">
+                Eye Color:</div>
+              Brown
+            </div>
+          </div>
+
+
+          <div style="clear: both; width: 100%; padding-bottom: 10px; padding-top: 15px;">
+            <div class="header">
+              Offenses:</div>
+            <div>
+              <table cellspacing="0" cellpadding="4" border="0" id="ctl00_ContentPlaceHolder1_OffenderDetails1_offenses"
+                style="color:#333333;width:100%;border-collapse:collapse;">
+                <tr style="color:Black;background-color:#E2E0D3;">
+                  <th align="left" scope="col">Conviction Date</th>
+                  <th align="left" scope="col">Conviction State</th>
+                  <th align="left" scope="col">Statute</th>
+                  <th align="left" scope="col">Offense</th>
+                </tr>
+                <tr class="RowStyle">
+                  <td align="left" valign="top">12/06/2006</td>
+                  <td align="left" valign="top">SC</td>
+                  <td align="left" valign="top">0</td>
+                  <td align="left" valign="top"><a href="OffenseCode.aspx?id=1239" target="_blank">Contact Sheriffs
+                      Office</a></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div>&nbsp;</div>
+
+      <div style="border:solid 1px Black; padding-top:10px; color:Black;">
+        <div style="margin:0px 5px 0px 5px;">
+          If you believe the listed information is in error, you may contact us via the "Submit a Tip" button above.
+        </div>
+        <div style="padding-top:8px; color:Red; margin: 0px 5px 5px 5px">
+          THE INFORMATION PROVIDED ON THIS SITE IS INTENDED FOR COMMUNITY SAFETY PURPOSES ONLY AND SHOULD NOT BE USED TO
+          THREATEN, INTIMIDATE, OR HARASS. MISUSE OF THIS INFORMATION MAY RESULT IN CRIMINAL PROSECUTION.
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="Footer">
+
+      <!--
+        <div style="padding-top:5px; padding-bottom:5px; text-align:center;">
+
+            <div style="float:left; margin-left:5%; cursor:pointer;" onclick="location.href='https://www.sled.sc.gov/'; " title="SLED Home Page">
+                <img id="ctl00_sledLogo" src="App_Themes/SLED/Images/SLED_Logo.png" style="height:25px;width:25px;border-width:0px;" />
+                &nbsp;
+            </div>
+
+            <div style="float:left; margin-top:5px; cursor:pointer;" onclick="location.href='https://www.sled.sc.gov/'; " title="SLED Home Page">
+                <b>SLED Headquarters:</b>
+                &nbsp;
+                4400 Broad River Road
+                &nbsp;&nbsp;
+                Columbia, SC 29210
+            </div>
+
+            <div style="float:left; margin-top:5px;" title="Call SLED">
+                &nbsp;&nbsp;
+                <a href="tel:+8038967000">Phone: 803.896.7000</a>
+            </div>
+
+            <div style="clear:both;"></div>
+
+        </div>
+        -->
+
+      <div
+        style="background-color: #808080; margin-bottom: 10px; color: #FFFFFF; padding-top: 10px; text-align:center;">
+
+        <a href="https://www.sled.sc.gov/" title="SLED Home Page" style="color: #FFFFFF">
+          <img id="ctl00_imgLogo" title="SLED Home Page" src="App_Themes/SLED/Images/logo2.png" align="top"
+            style="height:115px;width:115px;border-width:0px;" />
+        </a>
+
+        <br />
+
+        <a href="https://www.sled.sc.gov/" title="SLED Home Page" style="color: #FFFFFF">SLED Headquarters <br />4400
+          Broad River Road <br />Columbia, SC 29210 <br />Phone: 803.737.9000</a>
+
+        <div>
+          <img src="../App_Themes/SLED/Images/CALEA_GoldStandard_small.svg"
+            onerror="this.src='../App_Themes/SLED/Images/CALEA_Logo.png'" alt="CALEA" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          Copyright © 2020 South Carolina Law Enforcement Division. All rights reserved.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="../App_Themes/SLED/Images/ANAB.svg" onerror="this.src='../App_Themes/SLED/Images/ANAB_fallback.png'"
+            alt="ANAB" />
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data = new Object();
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.disappearAfter = 500;
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.horizontalOffset = 2;
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.verticalOffset = 0;
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.hoverClass = 'ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_15';
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.hoverHyperLinkClass = 'ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_14';
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.staticHoverClass = 'ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_13';
+      ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_Data.staticHoverHyperLinkClass = 'ctl00_ContentPlaceHolder1_OffenderDetails1_menuEditUser_12';
+//]]>
+    </script>
+  </form>
+
+
+
+</body>
+
+</html>
